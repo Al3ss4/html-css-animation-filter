@@ -66,5 +66,15 @@
 }
 .ex-7-img:hover{
     border-radius: 15px;
-    filter: sepia(2);
+    filter:invert(2)
+}
+
+/* Esercizio 8 */
+
+.ex-8-img{
+    transition:3s;
+}
+.ex-8-img:hover{
+    filter: grayscale(0.5) blur(10px);
+    border-radius: 15px;
 }
