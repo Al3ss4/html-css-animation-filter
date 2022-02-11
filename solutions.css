@@ -124,6 +124,7 @@
     animation-name: rotatetop;
     animation-duration: 5s;
     animation-timing-function: linear;
+    background-color: green;
 }
 
 @keyframes rotatetop { 
@@ -143,6 +144,7 @@
     animation-name: rotatebottom;
     animation-duration: 3s;
     animation-timing-function: linear;
+    background-color: green;
 }
 
 @keyframes rotatebottom { 
@@ -154,5 +156,76 @@
     }
     100% {
         right: 20%;
+    }
+}
+
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: rotateTopComplete;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotateTopComplete { 
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    20% {
+        left: calc(100% - 20px);
+        top: -10px;
+    }
+    40% {
+        left: calc(100% - 20px);
+        top: 100%;
+    }
+    60% {
+        left: 0;
+        top: 100%;
+    }
+    80% {
+        left: -10px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+
+.ex-13-button:hover .ex-13-bottom-white
+{
+    animation-name: rotateBotComplete;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateBotComplete { 
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    20% {
+        right: calc(100% - 20px);
+        bottom: -10px;
+    }
+    40% {
+        right: calc(100% - 20px);
+        bottom: 100%;
+    }
+    60% {
+        right: 0;
+        bottom: 100%;
+    }
+    80% {
+        right: -10px;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
     }
 }
