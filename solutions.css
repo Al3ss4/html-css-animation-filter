@@ -34,3 +34,21 @@
 .ex-4-square:hover{
     opacity: 0;
 }
+
+/* Esercizio 5 */
+
+.ex-5-square{
+    transition: 3s;
+}
+
+/* eseguito in due modi differenti */
+.ex-5-square:hover{
+    /* height: 100px; 
+    width: 100px; */
+    transform: scale(2);
+}
+.ex-5-square:active{
+    /* height: 30px;
+    width: 30px; */
+    transform: scale(0.5);
+}
